@@ -8,7 +8,7 @@ import sunnyicon from "../../assets/weather-sunny.svg"
 console.log("Hello");
 
 async function getWeatherData(location) {
-
+  const API_KEY = "L3N9KRSBZTSUP3ARPNFKXLD2K";
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&key=${API_KEY}&contentType=json`;
   try {
     let response = await fetch(url);
